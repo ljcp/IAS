@@ -129,7 +129,7 @@
                                 </div>
                                 <div class="form-group col-sm-6">
                                     <label for="textarea" class="form-label">Message:</label>
-                                    <textarea type="text" class="form-control" name="textarea" id="photoUpload-textarea" rows="8" cols="15"></textarea>
+                                    <textarea type="text" class="form-control" name="textarea" rows="8" cols="15"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <span id="submit-area">
@@ -247,8 +247,29 @@
     <!-- Frameworks -->
     <script src="assets/js/frameworks/bootstrap.min.js"></script>
     <script src="assets/js/frameworks/slick.min.js"></script>
+    <script src="assets/js/frameworks/jquery.validate.min.js"></script>
 
-   
+   <script>
+        jQuery.validator.setDefaults({
+            debug: true
+        });
+        var form = $("#quote-form");
+        form.validate({
+            messages: {
+                name: "Please enter your name.",
+                email: "Please enter your email address.",
+                cname: "Please enter your company name."
+            }
+        });
+        $('#submit').click(function () {
+            if (form.valid()) {
+                //do nothing
+            } else {
+                e.preventDefault();
+            }
+        });
+
+    </script>
       
 <script>
 $('.slider').slick({
