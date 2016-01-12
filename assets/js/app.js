@@ -9,7 +9,7 @@ $(document).ready(function () {
         e.preventDefault();
         
         $.post("assets/php/form.php", $("#quote-form").serialize(), function (result) {
- //Check the result set from contact.php file.
+ //Check the result set from form.php file.
             if (result == 'sent') {
  //If the email is sent successfully, remove the submit button
                 $('#submit-area').remove();
