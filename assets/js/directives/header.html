@@ -1,0 +1,33 @@
+ <!-- Static navbar -->
+      <nav class="navbar navbar-default box">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" ng-click="isCollapsed = !isCollapsed" id="menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img ng-src="{{ info.logo }}" alt="industrial air solutions logo" id="logo"/></a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse" ng-init="isCollapsed = true" collapse="isCollapsed">
+            <ul class="nav navbar-nav">
+               <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Solutions/Products<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="industrial-ventilation.html">Industrial Ventilation</a></li>
+                  <li><a href="fans-makeup-air.html">Fans & Makeup Air</a></li>
+                  <li><a href="dust-mist-collection.html">Dust & Mist Collection</a></li>
+                  <li><a href="pneumatic-conveying.html">Pneumatic Conveying</a></li>
+                  <li><a href="air-noise-pollution.html">Air & Noise Pollution</a></li>
+                  <li><a href="replacement-bags.html">Replacement Bags</a></li>
+                  <li><a href="nfpa-compliance.html">NFPA Compliance</a></li>
+                </ul>
+              </li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>

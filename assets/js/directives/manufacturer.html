@@ -1,0 +1,13 @@
+<div class="col-md-4 col-sm-6 col-xs-6 col-tn-12" ng-hide="(info.items | filter:search).length == 0 && info.name.toLowerCase().indexOf(search.toLowerCase()) == -1">
+    <div class="manufacturer-box">
+        <h2 class="manufacturer-title">{{ info.name }}</h2>
+        <a href="{{ info.homeLink}}" target="_blank">
+            <img ng-src="{{ info.image }}" class="manufacturer-img" alt="{{ info.alt }}"/>
+        </a>
+        <ul>
+            <li ng-repeat="item in info.items | filter:search">
+                <a href="{{ item.link }}" target="_blank">{{ item.name }}</a>
+            </li>
+        </ul>
+    </div>
+</div>

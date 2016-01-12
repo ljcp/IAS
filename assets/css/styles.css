@@ -1,0 +1,1072 @@
+/* Components & Variables */
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+/* line 39, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.25em;
+  background-color: #fafafa; }
+
+/* line 50, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.jumbotron h1,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2e2e2e;
+  text-shadow: none;
+  margin: 10px; }
+
+/* line 55, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+h1 {
+  font-size: 3em; }
+
+/* line 58, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+h2 {
+  font-size: 2.25em; }
+
+/* line 61, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+h3 {
+  font-size: 1.75em; }
+
+/* line 64, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+h4 {
+  font-size: 1.125em; }
+
+/* line 67, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+h5 {
+  font-size: 0.83em; }
+
+/* line 70, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+h6 {
+  font-size: 0.75em; }
+
+/* line 73, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+p {
+  font-size: 1.25em;
+  color: #2e2e2e;
+  text-shadow: none; }
+
+@media (max-width: 767px) {
+  /* line 79, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  h1 {
+    font-size: 2.4em; }
+  /* line 82, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  h2 {
+    font-size: 1.8em; }
+  /* line 85, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  h3 {
+    font-size: 1.4em; }
+  /* line 88, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  h4 {
+    font-size: 0.9em; }
+  /* line 91, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  h5 {
+    font-size: 0.664em; }
+  /* line 94, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  h6 {
+    font-size: 0.6em; } }
+
+/* line 99, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+a:active,
+button:active {
+  outline: none; }
+
+/* line 102, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.row {
+  margin-bottom: 0px;
+  margin-top: 0px; }
+
+/* line 106, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.box {
+  border-radius: 6px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: auto;
+  padding: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+/* line 115, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.btn-primary {
+  background-color: #c43d19;
+  border-color: #c43d19; }
+
+/* line 121, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #952e12;
+  border-color: #952e12;
+  outline: none; }
+
+/* line 126, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.form-control {
+  background-color: #eee; }
+
+/* line 130, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.form-control:active,
+.form-control:focus {
+  border: 2px solid #19A0C4;
+  background-color: #fff;
+  outline: none;
+  color: #212121; }
+
+@media (max-width: 1200px) {
+  /* line 137, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .container {
+    width: auto; } }
+
+/* line 147, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#cta-header {
+  height: 45px;
+  background-color: #19A0C4;
+  color: #fff;
+  padding: 12px;
+  margin-bottom: 10px; }
+
+/* line 154, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#cta-header #cta-email {
+  margin: 0px;
+  padding: 0px; }
+
+/* line 158, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#cta-header a {
+  color: #fff;
+  font-size: 1.25em; }
+
+/* line 162, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#cta-header .btn-sm {
+  padding: 3px;
+  margin: auto;
+  margin-top: -5px;
+  background-color: transparent;
+  width: 120px;
+  font-size: 1.25em;
+  border-color: #fff; }
+
+/* line 171, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#cta-header .btn-sm:hover {
+  border-color: #c43d19;
+  background-color: #c43d19; }
+
+@media (max-width: 480px) {
+  /* line 176, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  #cta-header {
+    padding: 2px;
+    padding-top: 12px; }
+  /* line 181, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  #cta-header a,
+  #cta-header .btn-sm {
+    font-size: 0.9375em; }
+  /* line 184, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  #cta-header .btn-sm {
+    width: 80px;
+    margin-top: -2px; } }
+
+@media (max-width: 345px) {
+  /* line 190, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  #cta-header {
+    display: none; } }
+
+/* line 201, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.navbar {
+  margin-top: 40px;
+  margin-bottom: 0px;
+  border: none; }
+
+/* line 206, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#logo {
+  width: 260px; }
+
+/* line 209, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.navbar-default .navbar-collapse {
+  background-color: #fff; }
+
+/* line 212, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.navbar-nav li a {
+  font-size: 1.25em;
+  color: #8d8d8d;
+  font-family: 'Merriweather', serif; }
+
+/* line 217, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.navbar-default .navbar-toggle {
+  border-radius: 6px;
+  border: 1px solid #19A0C4;
+  margin-right: 0px; }
+
+/* line 222, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #19A0C4; }
+
+/* line 227, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:active {
+  background-color: #19A0C4;
+  border-color: #19A0C4; }
+
+/* line 233, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:active .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #fff; }
+
+/* line 236, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #2e2e2e;
+  background-color: inherit; }
+
+/* line 240, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.navbar-default .navbar-nav .dropdown li a {
+  color: #8d8d8d; }
+
+@media (min-width: 768px) {
+  /* line 244, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .navbar-nav {
+    float: right;
+    margin-top: 3px; }
+  /* line 250, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .navbar-default .navbar-nav li a:hover,
+  .navbar-default .navbar-nav li a:active,
+  .navbar-default .navbar-nav li a:focus {
+    color: #2e2e2e; }
+  /* line 255, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .navbar-default .navbar-nav .dropdown li a:hover,
+  .navbar-default .navbar-nav .dropdown li a:active,
+  .navbar-default .navbar-nav .dropdown li a:focus {
+    color: #2e2e2e; } }
+
+@media (max-width: 880px) {
+  /* line 260, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .navbar-nav {
+    margin-top: 3px;
+    margin-right: -15px; }
+  /* line 264, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .navbar-nav li a {
+    padding: 10px; }
+  /* line 267, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  #logo {
+    width: 200px;
+    margin-top: 3px; } }
+
+@media (max-width: 767px) {
+  /* line 273, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  #logo {
+    width: 180px;
+    margin-top: 8px;
+    margin-left: -25px; } }
+
+/* line 285, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.slick-slide {
+  height: auto; }
+
+/* line 288, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.slider-img {
+  width: 100%;
+  border-radius: 6px; }
+
+/* line 292, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#home-header h1 {
+  margin-bottom: 30px;
+  margin-left: 0px; }
+
+/* line 296, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#home-header p {
+  text-align: left;
+  margin-bottom: 30px;
+  padding-right: 10px; }
+
+@media (max-width: 767px) {
+  /* line 303, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  #home-header h1,
+  #home-header p {
+    padding: 10px;
+    margin-bottom: 10px; }
+  /* line 307, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  #home-header button {
+    margin-left: 10px;
+    margin-bottom: 20px; } }
+
+/* line 317, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+a.feature-box {
+  text-decoration: none; }
+
+/* line 320, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.feature-box {
+  border-radius: 6px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: auto;
+  display: block;
+  padding: 0px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s ease-in-out; }
+
+/* line 331, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.feature-box:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23); }
+
+/* line 335, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.feature-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 10px;
+  padding-bottom: 50px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(transparent));
+  color: #fff;
+  width: auto;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px; }
+
+/* line 350, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.feature-img {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  object-fit: cover;
+  padding: 0px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px; }
+
+/* line 359, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.feature-p {
+  font-size: 1.25em;
+  padding: 20px;
+  text-align: left; }
+
+/* line 364, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.feature-btn {
+  font-size: 1.25em;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: #8d8d8d;
+  text-decoration: none;
+  margin-bottom: 15px;
+  text-align: left;
+  margin-left: 60%; }
+
+/* line 375, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.feature-box:hover button.feature-btn {
+  color: #c43d19; }
+
+/* line 378, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+a.feature-box:hover .feature-p {
+  text-decoration: none; }
+
+@media (max-width: 767px) {
+  /* line 382, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .feature-title {
+    margin-top: 10px; }
+  /* line 385, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .feature-btn {
+    margin: auto;
+    margin-bottom: 10px; } }
+
+@media (max-width: 500px) {
+  /* line 391, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .feature-img {
+    display: none; }
+  /* line 394, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .feature-title {
+    position: relative;
+    padding: 10px;
+    background-image: none;
+    background-color: #19A0C4;
+    color: #fff;
+    width: auto;
+    min-height: 70px;
+    margin: 0px; }
+  /* line 404, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .feature-p {
+    padding: 10px; }
+  /* line 407, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .feature-btn {
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px; } }
+
+/* line 419, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.footer-col {
+  list-style: none; }
+
+/* line 422, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.footer-col {
+  padding: 15px;
+  padding-bottom: 30px;
+  text-align: center; }
+
+/* line 427, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.footer-col li {
+  padding: 3px; }
+
+/* line 431, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.footer-col p,
+.footer-col li a {
+  font-size: 1.25em;
+  color: #8d8d8d; }
+
+/* line 435, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.footer-col h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 0px; }
+
+/* line 440, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.footer-col li a:hover {
+  color: #212121; }
+
+/* line 443, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#copyright {
+  text-align: center;
+  margin-right: -10px;
+  margin-left: -10px;
+  background-color: #19A0C4;
+  margin-bottom: -10px;
+  padding: 10px;
+  padding-top: 20px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px; }
+
+/* line 454, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#copyright p {
+  color: #fff; }
+
+/* line 457, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#copyright a {
+  color: #fff; }
+
+/* line 467, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#quote-form label,
+#contact-form label {
+  float: left; }
+
+/* line 471, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#quote-form,
+#contact-form label {
+  font-size: 1.25em; }
+
+/* line 474, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#service-options {
+  margin-bottom: 40px; }
+
+/* line 477, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#service-options .checkbox {
+  padding: 10px;
+  margin: 20px 10px; }
+
+/* line 481, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.form-group {
+  padding-top: 5px; }
+
+/* line 484, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.alert {
+  display: none; }
+
+/* line 487, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#close {
+  float: right;
+  margin-top: -26px;
+  background-color: transparent;
+  border: none;
+  color: #8d8d8d; }
+
+/* line 496, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#close:hover,
+#close:active,
+#close:focus {
+  color: #8d8d8d; }
+
+/* line 499, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#submit {
+  margin-left: auto;
+  margin-right: 15px;
+  display: inline-block;
+  margin-left: 15px; }
+
+/* line 505, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.modal-footer {
+  margin-top: 40px; }
+
+/* line 508, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.modal-footer p {
+  width: 100%; }
+
+/* line 516, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.solutions-h1 h1 {
+  text-align: center; }
+
+/* line 519, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.solutions-header p {
+  text-align: left;
+  padding: 10px; }
+
+/* line 523, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.solution-aside {
+  display: table-cell;
+  float: right;
+  margin-right: -15px; }
+
+/* line 528, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.solution-aside h3 {
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 10px 5px;
+  background-color: #19A0C4;
+  color: #fff; }
+
+/* line 538, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.aside-list {
+  list-style: none;
+  margin: auto;
+  text-align: center;
+  padding: 0px; }
+
+/* line 544, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.aside-list li {
+  padding: 8px; }
+
+/* line 547, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.aside-list li a {
+  font-size: 1.25em;
+  color: #8d8d8d; }
+
+/* line 553, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.aside-list li a:hover,
+.aside-list li a:active,
+.aside-list li a:focus {
+  color: #212121; }
+
+@media (max-width: 767px) {
+  /* line 557, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .solution-aside {
+    display: none; }
+  /* line 560, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .solutions-h1 {
+    margin-bottom: 20px; }
+  /* line 563, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .solutions-header .btn {
+    margin-bottom: 20px; } }
+
+/* line 572, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#search-box {
+  float: left;
+  width: 100%; }
+
+/* line 576, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#search-box .input-group-lg {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 500px; }
+
+/* line 582, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.input-group-btn {
+  background-color: #19A0C4;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px; }
+
+/* line 587, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.input-group-btn .fa {
+  color: #fff;
+  padding: 3px; }
+
+/* line 591, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.popover.top {
+  width: 400px; }
+
+/* line 594, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.popover-title {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-size: 16px; }
+
+/* line 600, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.popover-content {
+  font-size: 16px;
+  color: #212121;
+  text-align: left; }
+
+/* line 605, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#search-box input {
+  max-width: 500px;
+  margin: auto; }
+
+/* line 609, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.manufacturer-box {
+  border-radius: 6px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  min-height: 350px;
+  display: block;
+  padding: 0px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s ease-in-out; }
+
+/* line 620, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.manufacturer-title {
+  padding: 10px;
+  background-color: #19A0C4;
+  color: #fff;
+  height: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px; }
+
+/* line 630, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.manufacturer-img {
+  max-width: 200px;
+  max-height: 100px;
+  padding: 10px; }
+
+/* line 635, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.manufacturer-box ul {
+  list-style: disc;
+  padding: 20px 0px;
+  font-size: 1.25em; }
+
+/* line 640, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.manufacturer-box ul li {
+  padding: 5px;
+  text-align: center;
+  width: 75%;
+  margin: auto; }
+
+/* line 646, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.manufacturer-box ul li a {
+  color: #8d8d8d; }
+
+/* line 651, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.manufacturer-box ul li a:hover,
+.manufacturer-box ul li a:active,
+.manufacturer-box ul li a:focus {
+  color: #212121; }
+
+@media (max-width: 767px) {
+  /* line 655, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .popover.top {
+    width: 300px;
+    margin: auto;
+    margin-top: -10px;
+    left: -450% !important; } }
+
+@media (max-width: 510px) {
+  /* line 663, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .col-tn-12 {
+    width: 100%; }
+  /* line 666, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .manufacturer-box {
+    min-height: auto; }
+  /* line 669, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .manufacturer-title {
+    color: #fff;
+    height: auto; } }
+
+@media (max-width: 380px) {
+  /* line 675, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .popover.top {
+    width: 200px;
+    left: -350% !important; } }
+
+/* line 685, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.about-header h2 {
+  text-align: left; }
+
+/* line 688, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.about-img {
+  float: right;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  border-radius: 6px; }
+
+/* line 696, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.about-header p {
+  text-align: left;
+  padding: 10px; }
+
+/* line 700, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.about-header q {
+  font-size: 1.75em;
+  padding: 20px;
+  font-style: italic;
+  float: right;
+  max-width: 400px; }
+
+/* line 708, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#team h3,
+#team-small h3 {
+  background-color: #a0c419; }
+
+/* line 711, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.team-member a {
+  display: block; }
+
+/* line 714, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.team-member:last-child {
+  margin-bottom: 10px; }
+
+/* line 717, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.aside-list hr {
+  margin-bottom: 4px;
+  margin-top: 10px; }
+
+/* line 721, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.avatar {
+  border-radius: 50%;
+  height: 55px;
+  border: 1px solid #ccc;
+  float: left; }
+
+/* line 727, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.avatar:hover + .avatar-name {
+  color: #212121;
+  text-decoration: underline; }
+
+/* line 731, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.avatar-name {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 1em;
+  padding-left: 5px;
+  text-align: left;
+  color: #8d8d8d; }
+
+/* line 741, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.avatar-name:hover,
+.avatar-name:active,
+.avatar-name:focus {
+  color: #212121;
+  text-decoration: underline; }
+
+/* line 745, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.cta-box {
+  min-height: 250px;
+  background-color: #19A0C4; }
+
+/* line 749, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.cta-box p {
+  font-size: 1.75em;
+  color: #fff;
+  padding: 40px 0px; }
+
+/* line 754, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.cta-box button {
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 0px; }
+
+/* line 759, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.cta-box a {
+  display: block;
+  width: 150px;
+  margin: auto; }
+
+/* line 764, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.cta-box a:hover {
+  text-decoration: none; }
+
+@media (max-width: 1005px) {
+  /* line 768, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .about-img {
+    max-width: 300px; }
+  /* line 771, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .avatar {
+    float: none; }
+  /* line 774, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .avatar-name {
+    text-align: center;
+    margin-bottom: 0px; }
+  /* line 778, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .aside-list hr {
+    margin-top: 0px; } }
+
+@media (min-width: 768px) {
+  /* line 783, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  #team-small {
+    display: none; } }
+
+@media (max-width: 767px) {
+  /* line 788, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .about-img {
+    max-width: 400px;
+    margin: auto;
+    float: none; }
+  /* line 793, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  #team-small {
+    display: block; }
+  /* line 796, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  #team-small {
+    margin-right: 0px; }
+  /* line 799, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  #team-small .team-member {
+    display: inline-block;
+    margin: 10px 5px; }
+  /* line 803, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  #team-small .avatar-name {
+    display: block; }
+  /* line 806, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  #team-small hr {
+    display: none; } }
+
+/* line 815, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#contact-form #send {
+  position: absolute;
+  top: 112;
+  left: 0;
+  width: 150px;
+  margin-left: 20px; }
+
+/* line 822, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#contact-info a p {
+  font-size: 1em;
+  padding: 10px; }
+
+/* line 828, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+#contact-info .aside-list li a:hover,
+#contact-info .aside-list li a:active,
+#contact-info .aside-list li a:focus {
+  color: #c43d19;
+  text-decoration: none; }
+
+@media (min-width: 768px) {
+  /* line 833, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  #contact-info-small {
+    display: none; } }
+
+@media (max-width: 767px) {
+  /* line 838, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  #contact-form #send {
+    position: inherit;
+    margin-left: 0px; }
+  /* line 842, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  #contact-info-small {
+    display: block;
+    margin-right: 0px; }
+  /* line 846, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  #contact-info-small .aside-list li {
+    display: inline-block;
+    margin: 10px; }
+  /* line 850, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  #contact-info-small a p {
+    font-size: 1em;
+    padding: 10px; }
+  /* line 856, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  #contact-info-small .aside-list li a:hover,
+  #contact-info-small .aside-list li a:active,
+  #contact-info-small .aside-list li a:focus {
+    color: #c43d19;
+    text-decoration: none; } }
+
+/* line 866, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.team-box {
+  min-height: 210px; }
+
+/* line 869, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.map {
+  width: 233px;
+  margin-top: -10px;
+  margin-left: -20px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding: 5px;
+  float: left; }
+
+/* line 878, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.team-avatar {
+  float: left;
+  border-radius: 50%;
+  height: 100px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin-top: 10px; }
+
+/* line 886, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.team-info {
+  float: left;
+  text-align: left;
+  margin-top: 22px;
+  margin-left: 10px; }
+
+/* line 892, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.team-info h3 {
+  text-align: left; }
+
+/* line 895, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.team-info h3 small {
+  vertical-align: middle;
+  font-size: .75em;
+  color: #212121; }
+
+/* line 900, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.team-info p {
+  padding: 0px 10px;
+  font-size: 1.25em; }
+
+/* line 904, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.team-box .btn {
+  float: right;
+  margin-right: -30px; }
+
+/* line 908, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.team-contact {
+  list-style: none;
+  float: left;
+  text-align: left;
+  margin-top: 45px;
+  padding: 0px; }
+
+/* line 915, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.team-contact li {
+  display: inline-block;
+  padding: 5px; }
+
+/* line 919, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.team-contact .fa {
+  color: #8d8d8d; }
+
+/* line 922, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.team-contact li a {
+  margin: 10px 20px;
+  margin-left: 0px;
+  font-size: 1.25em;
+  color: #8d8d8d; }
+
+/* line 930, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+.team-contact li a:hover,
+.team-contact li a:active,
+.team-contact li a:focus {
+  color: #212121; }
+
+@media (max-width: 934px) {
+  /* line 934, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .map {
+    padding: 15px; }
+  /* line 937, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-avatar {
+    margin-left: 20px; }
+  /* line 940, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-info {
+    margin-left: 0px; }
+  /* line 943, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-contact {
+    margin-top: 20px;
+    margin-left: 20px; } }
+
+@media (max-width: 767px) {
+  /* line 949, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .map {
+    width: 150px;
+    margin-top: 25px; }
+  /* line 953, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-avatar {
+    width: 60px;
+    height: 60px;
+    margin-top: 15px; }
+  /* line 958, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-info {
+    margin-top: 10px; } }
+
+@media (max-width: 645px) {
+  /* line 963, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-avatar {
+    margin-top: 5px; }
+  /* line 966, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-box .btn {
+    float: none;
+    margin-left: 90px; }
+  /* line 970, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-info {
+    margin-bottom: 10px;
+    margin-top: 0px; }
+  /* line 974, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-contact {
+    margin-top: 15px; } }
+
+@media (min-width: 576px) {
+  /* line 979, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-contact-wrap-sm {
+    display: none; }
+  /* line 982, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-btn-sm {
+    display: none; } }
+
+@media (max-width: 575px) {
+  /* line 987, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-contact-wrap-lg {
+    display: none; }
+  /* line 990, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-box {
+    min-height: 250px; }
+  /* line 993, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-btn-lg {
+    display: none; }
+  /* line 996, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-btn-sm .btn {
+    margin: auto;
+    margin-bottom: 10px;
+    float: none;
+    text-align: center; }
+  /* line 1002, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .col-tn-8 {
+    width: 80%; }
+  /* line 1005, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .col-tn-4 {
+    width: 20%; }
+  /* line 1008, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .map {
+    width: 130px;
+    float: left;
+    margin-top: 0px; }
+  /* line 1013, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-info {
+    margin-left: 10px; }
+  /* line 1016, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-contact {
+    text-align: center;
+    margin-top: 0px; }
+  /* line 1020, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-contact li {
+    margin: 8px; } }
+
+@media (max-width: 480px) {
+  /* line 1026, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .col-tn-8,
+  .col-tn-4 {
+    width: 100%; }
+  /* line 1029, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .col-tn-4 {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px; }
+  /* line 1033, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .map {
+    margin: auto;
+    float: none; }
+  /* line 1037, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-avatar {
+    float: none;
+    margin: auto; }
+  /* line 1041, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-info {
+    text-align: center; }
+  /* line 1044, /Library/WebServer/Documents/IAS/assets/css/styles.scss */
+  .team-info h3 {
+    text-align: center; } }
+
+/*# sourceMappingURL=styles.css.map */
