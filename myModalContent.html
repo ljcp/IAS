@@ -1,0 +1,93 @@
+<div>
+        <div class="modal-header">
+            <h3 class="modal-title">Get A Quote</h3>
+            <button id="close" type="button" ng-click="cancel()"><i class="fa fa-times fa-2x"></i></button>
+        </div>
+        <div class="modal-body">
+            <form id="quote-form" method="post" name="quoteForm" ng-submit="submit()" novalidate>
+                <div class="form-group col-sm-6" ng-class="{ 'has-error' : quoteForm.name.$invalid && !quoteForm.name.$pristine }">
+                    <label for="name" class="form-label">Name: <p ng-show="quoteForm.name.$invalid && !quoteForm.name.$pristine" class="help-block help-block-font">Your name is required.</p> </label>
+                    <input type="text" class="form-control" ng-model="name" name="name" id="name" required>
+                </div>
+                <div class="form-group col-sm-6" ng-class="{ 'has-error' : quoteForm.email.$invalid && !quoteForm.email.$pristine }">
+                    <label for="email" class="form-label">Email: <p ng-show="quoteForm.email.$invalid && !quoteForm.email.$pristine" class="help-block help-block-font">Please enter a valid email address.</p></label>
+                    <input type="email" class="form-control" ng-model="email" name="email" id="email" required>
+                </div>
+                <div class="form-group col-sm-6" ng-class="{ 'has-error' : quoteForm.phone.$invalid && !quoteForm.phone.$pristine }">
+                    <label for="phone" class="form-label">Phone: <p ng-show="quoteForm.phone.$invalid && !quoteForm.phone.$pristine" class="help-block help-block-font">Please enter your phone number.</p></label>
+                    <input type="text" class="form-control" ng-model="phone" name="phone" id="phone" required>
+                </div>
+                <div class="form-group col-sm-6" ng-class="{ 'has-error' : quoteForm.cname.$invalid && !quoteForm.cname.$pristine }">
+                    <label for="cname" class="form-label">Company Name: <p ng-show="quoteForm.cname.$invalid && !quoteForm.cname.$pristine" class="help-block help-block-font">Please enter your Company name.</p></label>
+                    <input type="text" class="form-control" ng-model="cname" name="cname" id="cname" required>
+                </div>
+                <div class="form-group col-sm-6" id="service-options">
+                    <label for="service-options" class="form-label">Interested In:</label>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="ventilation" ng-model="ventilation" name="ventilation">
+                            Industrial Ventilation
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="fans" ng-model="fans" name="fans">
+                            Fans & Makeup Air
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="dust" ng-model="dust" name="dust">
+                            Dust/Mist Collection
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="conveying" ng-model="conveying" name="conveying">
+                            Pneumatic Conveying
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="pollution" ng-model="pollution" name="pollution">
+                            Air & Noise Pollution
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="bags" ng-model="bags" name="bags">
+                            Replacement Bags
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="nfpa" ng-model="nfpa" name="nfpa">
+                            NFPA Compliance
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" ng-model="other" value="other" name="other" ng-checked>
+                            Other
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="textarea" class="form-label">Message:</label>
+                    <textarea type="text" class="form-control" name="textarea" rows="8" cols="15"></textarea>
+                </div>
+                <div class="form-group">
+                                    <span id="submit-area">
+                                        <input type="submit" ng-disabled="quoteForm.$invalid" class="btn btn-lg btn-primary" id="submit" value="Send">
+                                    </span>
+                </div>
+                <div id="success" class="alert alert-success" role="alert">Your request was successfully sent! A sales represenative will respond shortly.
+                </div>
+                <div id="fail" class="alert alert-warning" role="alert">Sorry. Something went wrong. Please refresh and try again.
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <p>Once your form is sent a member of our sales team will respond as soon as possible.</p>
+        </div>
+</div>

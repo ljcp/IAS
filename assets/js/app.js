@@ -4,7 +4,7 @@ $(document).ready(function () {
     'use strict';
     //Form
     $('#submit').click(function (e) {
-        
+
         //Stop form submission & check the validation
         e.preventDefault();
         
