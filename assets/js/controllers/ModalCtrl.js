@@ -69,7 +69,7 @@ app.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, items, 
 
     $http({method : 'POST' ,
       url : 'assets/php/form.php' ,
-      data : data,
+      data : $.param(data),
       headers: {'Content-Type': 'application/x-www-form-urlencoded'}}).success(
         function(data) {
 
