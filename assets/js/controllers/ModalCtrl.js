@@ -61,7 +61,8 @@ app.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, items, 
       pollution: $scope.pollution,
       bags: $scope.bags,
       nfpa: $scope.nfpa,
-      other: $scope.other
+      other: $scope.other,
+      msg: $scope.msg
 
     }
 
