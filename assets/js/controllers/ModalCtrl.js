@@ -62,7 +62,7 @@ app.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, items, 
       bags: $scope.bags,
       nfpa: $scope.nfpa,
       other: $scope.other,
-      msg: $scope.msg
+      msg: $scope.messagequote
 
     }
 
